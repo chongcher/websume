@@ -138,3 +138,59 @@ So, what did we just add to our project folder?
 ## Hello World
 
 Remember our old friend, the command prompt? Run the following command to start the application: `npm start`
+
+## Deploying to Firebase
+
+### _What is Firebase?_
+
+_todo_
+
+### _Configuration
+
+First, register for an account at the [Firebase site](firebase.google.com). Then, head on over to the Firebase Console, and add a new project.
+
+### _Installation_
+
+Now, we're going to install the Firebase library for our application. In your terminal, run the following command:
+`npm install -g firebase-tools`
+
+After the installation has finished, log into your Google account with the following command: `firebase login`
+
+Next, we're going to initialize the Firebase library. Run `firebase init`, and accept the default configurations.
+
+Now, we can run `firebase serve`, to check if Firebase is properly working (open http://localhost:5000 in your browser!), or `firebase deploy` to deploy the application to the interwebs.
+
+### Linking Firebase and Webpack
+
+If you ran the previous `firebase serve` or `firebase deploy` commands, you'll notice that Firebase displays a default page, instead of your application. To do so, we need to combine Webpack and Firebase.
+
+Firstly, add the following line of code to the scripts in __package.json__: `"build": "webpack"`
+
+Your scripts should look something like this:
+~~~~
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --open",
+    "build": "webpack"
+  },
+~~~~
+
+Now, update hosting in __firebase.json__ with the following line of code: `"public": "./dist",`
+
+In your terminal, run `npm run build`. A new subfolder called __dist__ should be in your project folder, and it should contain two files, __index.html__ and __index_bundle.js__
+
+## Using Firebase DB
+`npm install --save firebase reactfire`
+
+__index.html__ - line 4 (below the Bootstrap stylesheet import)
+~~~~
+<!-- React -->
+<script src="https://fb.me/react-15.3.0.min.js"></script>
+<script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+<!-- ReactFire -->
+<script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
+~~~~
