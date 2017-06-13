@@ -54,7 +54,7 @@ export default class App extends React.Component{
                                     </ul>
                                 </td>
                                 <td>
-                                    Jun 2016 to Aug 2016
+                                    Jun 2017 to Aug 2017
                                 </td>
                             </tr>
                             <tr>
