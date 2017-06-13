@@ -2,6 +2,8 @@
 
 ## Introduction
 
+So, you want to create your own websumé?  
+
 ### _Technologies and Languages_
 
 Tools|Description
@@ -34,7 +36,7 @@ Libraries | Description
 
 ### _Configuration_
 
-Create the following files in your project folder, and copy the code below into them.
+Now, we'll be adding configuration files to the project folder. To do that, right click your project folder in Webstorm, and select New > File. Then, for each of the files below, copy the code below into the newly created file.
 
 __index.html__
 ~~~~
@@ -100,6 +102,18 @@ module.exports = {
 }
 ~~~~
 
+Lastly, we will be editing __package.json__. Place the following line of code under scripts.<br/>
+`,"start": "webpack-dev-server --hot --open`<br/>
+
+It should look something like this:
+~~~~
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    ,"start": "webpack-dev-server --hot --open"
+  },
+~~~~
+
+
 After adding these files, your directory structure should look something like this
 > project
 > <br/>|- node_modules/
@@ -115,12 +129,12 @@ So, what did we just add to our project folder?
 
 `.babelrc` is the configuration file for Babel. Babel allows us to transpile ES6 syntax into the Javascript syntax used in web browsers such as Chrome or Firefox
 
-`index.html` is the first page that is loaded when users visit our websumé. Also known as the "entry point"
+`index.html` is the first page that is loaded when users visit our websumé. Also known as the "entry point" of the application
 
 `package.json` is the configuration file for NodeJS
 
 `webpack.config.js` is te configuration file for Webpack. Webpack is a module bundler, allowing us to pull code from different files together.
 
-## _Hello World_
+## Hello World
 
 Remember our old friend, the command prompt? Run the following command to start the application: `npm start`
