@@ -149,7 +149,7 @@ In this section, we will be looking at how we can use Firebase to host our appli
 
 ### _Configuration
 
-First, register for an account at the [Firebase site](firebase.google.com). Then, head on over to the Firebase Console, and add a new project.
+First, register for an account at the [Firebase site](https://firebase.google.com). Then, head on over to the Firebase Console, and add a new project.
 
 ### _Installation_
 
