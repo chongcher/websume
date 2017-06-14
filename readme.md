@@ -143,7 +143,9 @@ Remember our old friend, the command prompt? Run the following command to start 
 
 ### _What is Firebase?_
 
-_todo_
+Firebase is a mobile and web development platform developed by Google. Firebase has multiple features such as website hosting, database hosting, cloud storage etc.
+
+In this section, we will be looking at how we can use Firebase to host our application.
 
 ### _Configuration
 
