@@ -181,6 +181,8 @@ Now, update hosting in __firebase.json__ with the following line of code: `"publ
 
 In your terminal, run `npm run build`. A new subfolder called __dist__ should be in your project folder, and it should contain two files, __index.html__ and __index_bundle.js__
 
+Now, run `firebase deploy`. Firebase will grab the two files in __dist__, and load them when you go to your project's Firebase site.
+
 ## Using Firebase DB
 `npm install --save firebase reactfire`
 
