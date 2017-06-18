@@ -2,13 +2,13 @@
 
 ## Introduction
 
-So, you want to create your own websumé?  
+So, you want to learn how create your own website? At the end of this tutorial, you will have learnt how to set up your own webpage, and use it to create a websumé!
 
 ### _Technologies and Languages_
 
 Tools|Description
 -----|-----------
-[Webstorm](https://www.jetbrains.com/webstorm/)|IDE for javascript. Get a free student version [here](https://www.jetbrains.com/student/)!
+[Webstorm](https://www.jetbrains.com/webstorm/)|IDE for Javascript. Get a free student version [here](https://www.jetbrains.com/student/)! <br/>_(You may use any IDE that supports JSX - [Atom](https://atom.io/) with the [Atom React plugin](https://orktes.github.io/atom-react/#jsx-reformatting) is a good choice for those without a student email!)_
 [Javascript (ES6)](http://es6-features.org/)|Programming language
 [npm (from node.js)](https://nodejs.org/en/)|Package manager
 [git](https://git-scm.com/)|Version control
@@ -22,14 +22,14 @@ Libraries | Description
 
 ### _Installation_
 
-1. Install Webstorm and NodeJS using the links above
-2. Create a project folder, and remember the path to the folder
+1. Install your preferred IDE as well as NodeJS using the links above
+2. Create a project folder, and remember the where you created the folder directory! _(Also known as the folder's __path__)_
 3. Open up your command prompt (terminal for mac users!) and type the following command
 `cd <folder>`, replacing `<folder>` with the path of the project folder you just created
-<br>_(or, you could press alt+f12 in Webstorm - it'll open an embedded terminal window set to the project folder!)_
+<br>_(or, you could press alt+f12 in Webstorm - this opens an embedded terminal window set to the project folder!)_
 4. Now, we are going to initialize the Node project. Run the following command in your command prompt: `npm init -f`
 <br>_(the `-f` flag creates the project with default settings!)_
-5. Next, we're going to install the libraries our websumé uses. Run the following command in your command prompt: `npm install --save react react-dom webpack html-webpack-plugin react-bootstrap`
+5. Next, we're going to install the libraries our websumé uses. _(Libraries are code that have been written by other people, and allows us to skip most of the boring stuff.)_ Run the following command in your command prompt: `npm install --save react react-dom webpack html-webpack-plugin react-bootstrap`
 <br> _(the --save flag ensures that the libraries are saved to your package.json file)_
 6. Last step! We'll be installing the libraries used to develop the websumé. Run the following command in your command prompt: `npm install --save-dev webpack-dev-server babel-loader babel-core babel-preset-es2015 babel-preset-react`
 <br> _(difference: you don't have to send the dev libraries to the person using the application)_
