@@ -1,5 +1,7 @@
 # Make-a-websumé
 
+[![Join the chat at https://gitter.im/websume/Lobby](https://badges.gitter.im/websume/Lobby.svg)](https://gitter.im/websume/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Introduction
 
 So, you want to learn how create your own website? At the end of this tutorial, you will have learnt how to set up your own webpage, and use it to create a websumé!
