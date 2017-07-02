@@ -5,9 +5,7 @@ export default class App extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {
-
-        }
+        this.state = {}
     }
 
     render(){
@@ -16,7 +14,7 @@ export default class App extends React.Component{
 
                 <div className="col-xs-10 col-xs-offset-1" style={{paddingBottom: "5vh"}}>
                 I am currently a senior in the School of Information Systems, Singapore Management University, where I
-                am pursuing a Bachelor of Science in Information Systems, with a second major in Operations Management.
+                am pursuing a Bachelor of Science in Information Systems.
                 </div>
 
                 <div className="col-xs-10 col-xs-offset-1">
@@ -31,7 +29,7 @@ export default class App extends React.Component{
                             <tr>
                                 <td>
                                     <b>Singapore Management University</b><br/>
-                                    B.S. Information Systems, Operations Management (Double Major)
+                                    B.S. Information Systems
                                 </td>
                                 <td>
                                     Aug 2014 to Aug 2018<br/>
@@ -49,7 +47,7 @@ export default class App extends React.Component{
                                     <i>Summer Intern (2017)</i>
                                     <ul>
                                         <li>
-                                            Created a frontend system for the Global Markets Equity Derivatives Department
+                                            Created a web interface for trade report generation for the Global Markets department.
                                         </li>
                                     </ul>
                                 </td>

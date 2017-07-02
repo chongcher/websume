@@ -11,25 +11,28 @@ export default class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            currentView: <Main/>
+            currentView: <Main openPost={pageIndex => this.posts(pageIndex)}/>
         };
     }
 
     render() {
         return (
             <div className="row">
-                <Navbar bsStyle="inverse">
+                <Navbar bsStyle="inverse" style={{margin: '0 0 1vh 0', width: '100vw'}}>
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a onClick={this.main.bind(this)}>chongcher</a>
                         </Navbar.Brand>
+                        <Navbar.Toggle/>
                     </Navbar.Header>
-                    <Nav>
-                        <NavItem onClick={this.posts.bind(this)}>posts</NavItem>
-                        <NavItem onClick={this.photos.bind(this)}>photos</NavItem>
-                        <NavItem onClick={this.about.bind(this)}>about</NavItem>
-                        <NavItem onClick={this.contact.bind(this)}>contact</NavItem>
-                    </Nav>
+                    <Navbar.Collapse>
+                        <Nav>
+                            <NavItem onClick={this.posts.bind(this, 0)}>posts</NavItem>
+                            <NavItem onClick={this.photos.bind(this)}>photos</NavItem>
+                            <NavItem onClick={this.about.bind(this)}>about</NavItem>
+                            <NavItem onClick={this.contact.bind(this)}>contact</NavItem>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
                 { this.state.currentView }
             </div>
@@ -37,12 +40,12 @@ export default class App extends React.Component{
     }
 
     main(){
-        let main = <div><Main/></div>;
+        let main = <div><Main openPost={pageIndex => this.posts(pageIndex)}/></div>;
         this.setState({currentView: main});
     }
 
-    posts(){
-        let posts = <div><Posts/></div>;
+    posts(pageIndex){
+        let posts = <div><Posts activePage={pageIndex}/></div>;
         this.setState({currentView: posts});
     }
 
